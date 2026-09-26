@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets
+.env
+*.pem
+
+# Model checkpoints & large binary outputs
+backend/data/raw_midi/*.mid
+backend/data/processed/*
+!backend/data/processed/.gitkeep
+backend/generated/*.mid
+backend/generated/*.mp3
+backend/generated/*.wav
+backend/generated/*.txt
+backend/data/processed/history.db
+backend/data/processed/history.json
+!backend/generated/.gitkeep
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
